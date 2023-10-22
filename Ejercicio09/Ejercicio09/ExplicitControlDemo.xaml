@@ -6,12 +6,16 @@
         <StackLayout Padding="0,20,0,0">
             <StackLayout.Resources>
                 <ResourceDictionary>
+                    
                     <Style x:Key="labelRedStyle" TargetType="Label">
                         <Setter Property="TextColor" Value="Red"></Setter>
+                        <Setter Property="FontSize" Value="30" />
+                        <Setter Property="HorizontalTextAlignment" Value="Center" />
                     </Style>
                 </ResourceDictionary>
             </StackLayout.Resources>
-            <Label Text="These labels" Style="{StaticResource labelRedStyle}" />
+            <Label Text="Esta parte se aplicó CSS" Style="{StaticResource labelRedStyle}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+    

@@ -14,5 +14,6 @@
                 <Setter Property="TextColor" Value="Teal" />
             </Style>
         </ResourceDictionary>
+        
     </Application.Resources>
 </Application>

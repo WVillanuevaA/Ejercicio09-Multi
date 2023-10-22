@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Ejercicio09
@@ -13,6 +8,30 @@ namespace Ejercicio09
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void DynamicDemo_Clicked(object sender, EventArgs e)
+        {
+            var dynamicDemo = (ContentPage)Resources["DynamicDemo"];
+            Navigation.PushAsync(dynamicDemo);
+        }
+
+        private void ExplicitControlDemo_Clicked(object sender, EventArgs e)
+        {
+            var explicitControlDemo = (ContentPage)Resources["ExplicitControlDemo"];
+            Navigation.PushAsync(explicitControlDemo);
+        }
+
+        private void GlobalDemo_Clicked(object sender, EventArgs e)
+        {
+            var globalDemo = (ContentPage)Resources["GlobalDemo"];
+            Navigation.PushAsync(globalDemo);
+        }
+
+        private void ImplicitControlDemo_Clicked(object sender, EventArgs e)
+        {
+            var implicitControlDemo = (ContentPage)Resources["ImplicitControlDemo"];
+            Navigation.PushAsync(implicitControlDemo);
         }
     }
 }
